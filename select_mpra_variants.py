@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 # Nathan Abell (nsabell)
-# GENE211: Genomics
-# Final Project
 
 # Load libraries
 import sys
