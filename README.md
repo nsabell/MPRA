@@ -9,8 +9,8 @@
 mkdir bin fastq fastqc logs raw
 mkdir fastq/run1 fastq/run2 fastqc/run1 fastqc/run2
 
-./scripts/00_generateFastq.sh ./170323_NS500418_0566_AHYNWJBGXY ./fastq #./fastqc
-./scripts/00_generateFastq.sh ./170718_NS500418_0640_AHF7W5BGX2 ./fastq #./fastqc
+./scripts/00_generateFastq.sh ./170323_NS500418_0566_AHYNWJBGXY ./fastq ./fastqc
+./scripts/00_generateFastq.sh ./170718_NS500418_0640_AHF7W5BGX2 ./fastq ./fastqc
 
 mv ./170323_NS500418_0566_AHYNWJBGXY/fastq/*fastq.gz fastq/run1
 mv ./170718_NS500418_0640_AHF7W5BGX2/fastq/*fastq/gz fastq/run2
@@ -20,6 +20,7 @@ mv ./170323_NS500418_0566_AHYNWJBGXY/fastq/DemultiplexReports
 mv ./170718_NS500418_0640_AHF7W5BGX2/fastq/DemultiplexReports
 
 tar cvfz 170323_NS500418_0566_AHYNWJBGXY.tar.gz 170323_NS500418_0566_AHYNWJBGXY
+
 tar cvfz 170718_NS500418_0640_AHF7W5BGX2.tar.gz 170718_NS500418_0640_AHF7W5BGX2
 
 ### Merge with FLASH and Get Unique Barcodes
