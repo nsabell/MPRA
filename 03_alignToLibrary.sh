@@ -13,7 +13,7 @@ mkdir bam
 
 bwa mem -L 100 -k 8 -O 5 -t 6 reference/bwa/1KG/1KG fastq_pairMerged/1KG_pairMerged_processed.fastq.gz > bam/1KG_pairMerged.sam &
 
-bwa mem -L 100 -k 8 -O 5 -t 6 reference/bwa/GTEX/GTEX fastq_pairMerged/GTEX_pairMerged_processed.fastq.gz > bam/GTEX_pairMerged.sam &
+bwa mem -L 100 -k 8 -O 5 -t 6 reference/bwa/GTEX/GTEX fastq_pairMerged/run1/GTEX.extendedFrags.fastq.gz > bam/GTEX_pairMerged.sam 2> bam/GTEX_pairMerged.log &
 
 wait
 
